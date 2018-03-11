@@ -18,15 +18,12 @@ $( document ).ready(function() {
 
     function showContent(e, element, navigation, info, img, close) {
       var eventTarget = e.target.hash;
-      var imgSrc = $(e.target).parents('figure').children('img').attr('src');
 
       e.preventDefault();
       $(element).addClass('show');
 
       $(info).find('li').removeClass('is-visible');
       $(info).find("li"+eventTarget).addClass('is-visible');
-
-      // $(navigation).siblings(".project_info").children('li'+eventTarget).find('img').attr('src', imgSrc);
     }
 
     var projectContainerList = document.getElementsByClassName('project');
@@ -60,22 +57,6 @@ $( document ).ready(function() {
 
   });
 
-
-/* ------------------------------------- */
-/* Backgound img Appending................... */
-/* ------------------------------------- */
-
-  $(function () {
-    $('.background-img-holder').each(function(){
-      var $imgSrc = $(this).children("img").attr("src");
-      $(this).children("img").hide();
-      $(this).css('background','url("'+$imgSrc+'")');
-      $(this).css('background-size', 'cover');
-      $(this).css('background-position', 'center');
-      $(this).css('height', '100%');
-    });
-  });
-
   /* ------------------------------------- */
   /* ScrollToTop   ................... */
   /* ------------------------------------- */
@@ -84,9 +65,9 @@ $( document ).ready(function() {
       $('#rightSide').animate({
           scrollTop: 0
       }, 500);
-      $('.project_info').animate({
-          scrollTop: 0
-      }, 500);
+      // $('.project_info').animate({
+      //     scrollTop: 0
+      // }, 500);
       if($(window).width() < 1024) {
         $('html, body').animate({
             scrollTop: 0
