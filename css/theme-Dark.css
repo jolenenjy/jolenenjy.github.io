@@ -21,8 +21,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+html{
+  height: 100%;
+  overflow:auto;
+}
+
 body {
+  min-height: 100%;
   line-height: 1.2em;
+  overflow:auto;
 }
 
 ol, ul {
@@ -184,6 +191,10 @@ img {
   max-width: 80px;
   left: 35%;
   z-index: 2;
+}
+
+.o-1{
+  opacity: 1 !important;
 }
 
 .social_icons {
@@ -377,6 +388,10 @@ img {
 
 #project1, #project2, #project3, #project4{
   overflow: auto;
+  -webkit-overflow-scrolling: touch;
+-webkit-transform: translateZ(0px);
+-webkit-transform: translate3d(0,0,0);
+-webkit-perspective: 1000;
 }
 
 .project.show {
@@ -396,16 +411,18 @@ img {
 }
 
 .project .close {
-  position: absolute;
+  position: fixed;
+    top: 0;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
   top: 0;
   right: 0;
-  z-index: 3;
+  z-index: 11;
   text-align: center;
   height: 60px;
   width: 60px;
-  overflow: hidden;
   background: #121619;
-  -webkit-transform: translateX(100px);
+  /* -webkit-transform: translateX(100px);
   -ms-transform: translateX(100px);
   -moz-transform: translateX(100px);
   -o-transform: translateX(100px);
@@ -414,9 +431,8 @@ img {
   -ms-transition: 0.3s;
   -moz-transition: 0.3s;
   -o-transition: 0.3s;
-  transition: 0.3s;
+  transition: 0.3s; */
   text-align: center;
-  opacity: 0;
   transition-delay: .1s;
 }
 
@@ -589,6 +605,7 @@ i {
   cursor: pointer;
 }
 
+
 /* ------------------------------------- */
 
 /* 8. Media Queries .................... */
@@ -748,6 +765,12 @@ i {
   }
   .about {
     padding: 30px 16px 50px 16px;
+  }
+  .reset{
+    position: relative !important;
+    background: none !important;
+    height: 30px !important;
+    width: auto !important;
   }
 }
 
