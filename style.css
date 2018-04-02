@@ -1,0 +1,338 @@
+body{
+  margin: 0;
+  font-family: 'Proxima Nova', Georgia, sans-serif;
+  color: #444;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+h5 {
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6rem;
+}
+
+span{
+  font-size: 0.8rem;
+  font-weight: 100;
+  letter-spacing: 0.6px;
+}
+
+a{
+  color: #444;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover{
+  color: #246FDE;
+}
+
+ul{
+  list-style: none;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: white;
+  border-bottom: 1px solid #f5f5f5;
+  z-index: 10;
+  /* box-shadow: 0px 2px 40px 0px rgba(0,0,0,0.08); */
+}
+
+.img{
+  width: 100%;
+  margin: 3rem 0 0 0;
+}
+
+.nav-wrap {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+}
+
+.nav-link {
+  float: right;
+  display: inline-block;
+  padding: 0 0 0 2em;
+  text-transform: uppercase;
+  text-rendering: optimizelegibility;
+  font-size: 0.8rem;
+  color: #9aa3ad;
+  letter-spacing: 1.3px;
+}
+
+.active{
+  color: #333 !important;
+}
+
+.logo{
+  width: 25px;
+}
+
+
+footer{
+  height: 180px;
+  text-align: center;
+  padding: 1rem;
+  color: #9aa3ad;
+}
+
+.social_icons {
+  padding: 0;
+}
+
+.social_icons li{
+  display: inline-block;
+  width: 25px;
+  padding: 0 0.5rem 1rem 0.5rem;
+}
+
+.social_icons li:hover{
+}
+
+.icon{
+  fill: #9aa3ad;
+  transition: 200ms ease;
+}
+
+.icon:hover{
+  fill: #246FDE;
+  transform: translate3d(0,-.25em,0);
+}
+
+.jolene{
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+  margin-top: 150px;
+}
+
+.jolene h2{
+  color:#9aa3ad;
+}
+
+.project{
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.grid-sizer, .grid-item{
+  background: #f8fafc;
+  width:32%;
+  margin-bottom: 2%;
+}
+
+.grid-item--width2 {
+  width:66%;
+}
+
+.grid-item .des{
+  width:100%;
+}
+
+.grid-item--width2 .des{
+  width:400px;
+}
+
+.gutter-sizer {
+  width: 2%;
+}
+
+.project-link{
+  cursor: pointer;
+}
+
+.project-left{
+  background-size: cover;
+  background-position: center;
+  transition: 200ms ease;
+  color: white;
+}
+
+.des{
+  opacity: 0;
+}
+.des p{
+  font-size: 1rem;
+  font-weight: 100;
+}
+
+.project-left:hover .des{
+  opacity: 1;
+  transition: 200ms ease;
+  color: white;
+}
+
+.project-left:hover .overlay{
+  background: rgba(0, 0, 0, 0.7);
+  transition: 200ms ease;
+}
+
+.overlay{
+  height: 200px;
+  padding: 1.2rem 2rem;
+  transition: 200ms ease;
+}
+
+.p1{
+  background-image: url(img/hdb.jpg);
+}
+
+.p2{
+  background-image: url(img/meter.jpg);
+}
+
+.p3{
+  background-image: url(img/nus.jpg);
+}
+
+.p4{
+  background-image: url(img/visa.jpg);
+}
+
+.p5{
+  background-image: url(img/matr3.png);
+}
+
+.article{
+  max-width: 710px;
+  margin: auto;
+  padding: 2rem;
+  margin-top: 150px;
+}
+
+.article h1{
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.article h3{
+  font-weight: 500;
+}
+
+.article img{
+  margin: 2rem 0;
+}
+
+.imgblock{
+  display: flex;
+  justify-content:space-between;
+}
+.imgblock .imgside{
+  width: 49%;
+}
+
+.article .img2{
+  width: 100%;
+}
+
+.block{
+  margin: 3rem 0;
+}
+
+.protoposition{
+  display: flex;
+  justify-content: center;
+  margin: -10rem 0;
+}
+
+.instaposition{
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+.protoscale{
+  transform: scale(0.6)
+}
+
+p a{
+  border-bottom: 2px solid #eee;
+}
+
+
+@media screen and (max-width: 796px) {
+  .grid-sizer, .grid-item{
+    width:49%;
+  }
+  .grid-item--width2 {
+    width:100%;
+  }
+  .article{
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav-wrap {
+    padding: 1rem 2rem;
+  }
+  .jolene{
+    margin-top: 100px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .grid-sizer, .grid-item{
+    width:100%;
+    margin-bottom: 4%;
+  }
+  .grid-item--width2 .des{
+    width:100%;
+  }
+  .grid-item .des{
+    width:100%;
+  }
+  .article{
+    margin-top: 60px;
+  }
+  .protoposition{
+    display: NONE;
+  }
+}
+
+@media screen and (max-width: 325px) {
+  .nav-wrap {
+    padding: 1rem 2rem;
+  }
+  .nav-link {
+    padding: 0 0 0 1.2em;
+    font-size: 0.7rem;
+  }
