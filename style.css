@@ -82,8 +82,7 @@ nav {
 
 .nav-link {
   float: right;
-  display: inline-block;
-  padding: 0 0 0 2em;
+  margin-left: 2em;
   text-transform: uppercase;
   text-rendering: optimizelegibility;
   font-size: 0.8rem;
@@ -325,22 +324,22 @@ p a{
   }
 }
 
-@media screen and (max-width: 385px) {
+@media screen and (max-width: 390px) {
   .nav-wrap {
     padding: 1rem 2rem;
   }
   .nav-link {
-    padding: 0 0 0 1.5em;
-    font-size: 0.7rem !important;
+    margin-left: 1.5em;
+    font-size: 0.72rem !important;
   }
 }
 
-@media screen and (max-width: 322px) {
+@media screen and (max-width: 342px) {
   .nav-wrap {
     padding: 1rem 2rem;
   }
   .nav-link {
-    padding: 0 0 0 1em;
+    margin-left: 1em;
     font-size: 0.65rem !important;
   }
 }
