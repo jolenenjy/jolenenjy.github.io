@@ -325,12 +325,22 @@ p a{
   }
 }
 
-@media screen and (max-width: 325px) {
+@media screen and (max-width: 385px) {
   .nav-wrap {
     padding: 1rem 2rem;
   }
   .nav-link {
-    padding: 0 0 0 1.2em;
+    padding: 0 0 0 1.5em;
     font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 322px) {
+  .nav-wrap {
+    padding: 1rem 2rem;
+  }
+  .nav-link {
+    padding: 0 0 0 1em;
+    font-size: 0.65rem;
   }
 }
