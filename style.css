@@ -331,7 +331,7 @@ p a{
   }
   .nav-link {
     padding: 0 0 0 1.5em;
-    font-size: 0.7rem;
+    font-size: 0.7rem !important;
   }
 }
 
@@ -341,6 +341,6 @@ p a{
   }
   .nav-link {
     padding: 0 0 0 1em;
-    font-size: 0.65rem;
+    font-size: 0.65rem !important;
   }
 }
