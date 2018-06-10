@@ -6,3 +6,11 @@ $('.grid').masonry({
   gutter: '.gutter-sizer',
   percentPosition: true
 })
+
+// lottie.loadAnimation({
+//   container: document.getElementById('illobg'), // the dom element that will contain the animation
+//   renderer: 'svg',
+//   loop: true,
+//   autoplay: true,
+//   path: 'wave.json' // the path to the animation json
+// });
