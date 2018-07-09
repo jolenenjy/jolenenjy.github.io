@@ -1,0 +1,6 @@
+{% macro active(activePage='Projetcs') %}
+<div class="article links">
+  <h3>Other Experiments</h3>
+  <p><a class="{%if activePage == 'motion' %} disablelink {% endif %}" href="motion.html">Illustration / Motion</a><a class="{%if activePage == 'tools' %} disablelink {% endif %}" href="tools.html">Tools / Templates</a>
+</div>
+{% endmacro %}

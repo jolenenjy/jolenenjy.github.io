@@ -1,0 +1,107 @@
+{% extends "layout.nunjucks" %}
+
+{% block meta %}
+<title>Jolene Ng – HDB</title>
+<meta name="description" content="Case study on the HDB Resale Portal by Jolene Ng.">
+{% endblock %}
+
+{% block content %}
+
+{% import 'macros/navigation.nunjucks' as nav %}
+{{nav.active('Na')}}
+
+  <div class="article">
+    <h1>HDB Resale Portal</h1>
+    <p>The Housing & Development Board (HDB) is Singapore's public housing authority. Over the span of a few months, we were tasked to work with them to digitalise and streamline the application process for buying and selling public housing a.k.a an HDB flat.</p>
+    <div class="block">
+        <h3>My Role</h3>
+        <p>I assisted with the research and testing activities, produced most of the deliverables (e.g. journey maps, service blueprints and reports) and lead the design of the UI. Together with two other individuals, we developed the prototype using foundation before proceeding to present it to both the CEO of HDB and Minister of National Development. </p>
+      </div>
+  </div>
+  <img class="img fullwidth-img" alt="HDB MOCKUP" src="img/hdb0.jpg">
+  <div class="article" style="margin-top: 0px;">
+    <div class="block">
+      <h3>The Brief</h3>
+      <p>"We want to reduce the time taken to complete the application process to buy and sell an HDB flat (from 16 weeks to 8 weeks)."</p>
+    </div>
+    <h3>Discovery</h3>
+    <p>After hearing about HDB's brief, we wanted to know more. How will this affect the citizen's experience? What do the internal departments think about this? Is the reduction of time really the only objective here? We spend 6 weeks running different activities to answer those questions.</p>
+    <h4>Stakeholder Survey</h4>
+    <p>Well-aware of the power distance phenomenon, we did a stakeholder survey. Expectedly, they had different priorities with the senior management focusing on shortening the application time and the working level with public perception. We aligned them by co-creating the tactical and strategic success metrics for the project and proceeded armed with that knowledge.</p>
+    <h4>Field research and in-depth interviews</h4>
+    <p>Next, we wanted to know who and what were we supposed to be designing for. On the surface, we knew it was for citizens going through the application process of buying and selling a flat, but what does that entail? To find out, we shadowed the customer relationship managers and conducted in-depth interviews.</p>
+  </div>
+  <img class="img fullwidth-img" alt="observation notes" src="img/hdb1.jpg">
+  <div class="article" style="margin-top: 0px;">
+    <h4>Journey Mapping</h4>
+    <p>Taking the findings we had, we mapped the citizen's journey and identified opportunities that could be improved and streamlined. One of which was the removal of the first appointment. In the entire application process, a citizen had to visit HDB's service center <b>twice</b>. This means taking leave off work and finding a common time with your buyer or seller to make the trip down in order to verify and sign a few documents. </p>
+    <p>Additionally, the human resources needed to serve the appointments were limited. Thus, waiting for an appointment could take up to 2-3 months.</p>
+    <p>Following that, we mapped out the to-be journey map and service delivery for both buyers and sellers. Below you see one version of the proposed hybrid journey map and service blueprint for the buyer's application.</p>
+  </div>
+  <img class="img fullwidth-img" alt="buyerjourney map" src="img/hdbbuyer.png">
+  <div class="article" style="margin-top: 0px;">  
+    <h4>Archetypes</h4>
+    <p>If you noticed the four coloured lines in the map above, they represent our user archetypes; pardon the lack of legends. Plotting our interviewees by their <b>aptitude</b> (tech-savviness) and <b>attitude</b> (independence) allowed us to identify key user groups by behavioral types.</p>
+    <p>The <b>determined</b> are tech-savvy enough to complete the application on their own and independent enough to want to do so. </p>
+    <p>The <b>busy and lazy</b> while equally capable chooses to be reliant on the customer service officer or their agent. </p>
+    <p>The <b>fearful</b> want to try doing the application on their own but lack the technical capability to do so. </p>
+    <p>The <b>clueless</b> refers to the minority who are completely unable to use a digital service due to multiple reasons. Being government, we cannot choose to leave them behind. As such, we stressed the importance of having a physical channel to cater to their needs to couple any digital applications.</p>
+    <img class="img" alt="archetype matrix" src="img/archetype.png">
+    <p>We proceeded by expanding on the behavioural traits and design considerations for each archetype, using evidence from our in-depth interviews and survey. Additionally, we identified the <b>busy and lazy</b> group as our primary persona as serving their needs first allows us to serve more of the other groups at once. </p>
+    <img class="img" alt="primary persona" src="img/primarypersona.png">
+  </div>
+  <img class="img fullwidth-img" alt="paper prototyping" src="img/paper.png">
+  <div class="article" style="margin-top: 0px;">    
+    <h3>Exploration</h3>
+    <p>Satisfied with the to-be journey we've mapped and our understanding of the different user groups, we started paper prototyping. Given that a citizen would have to complete multiple applications over a span of 2-4 months throughout the process, we wanted to help guide them to the next step whenever they logged in to the portal.</p>
+    <p>The current e-services website provides no indication to a citizen as to what they have completed and what they have to do next. Additionally, one would have to login for each step of the process. As such, we prototyped a portal where citizens will only have to log in once and see a checklist with the necessary steps to completion. </p>
+  </div>
+  <img class="img fullwidth-img" alt="paper prototyping" src="img/hdbpaper.jpg">
+  <div class="article" style="margin-top: 0px;"> 
+    <h4>Individual steps - Automatic Data Retrieval</h4>
+    <p>Of course, guiding the user through the process would not be sufficient if each step was still tedious to complete. We worked with the operations team to reduce the number of inputs they were requesting for and questioned the purpose of each.</p>
+    <p>Working with <a href="https://www.singpass.gov.sg/myinfo/intro">MyInfo</a> (the personal data platform for all Singaporean Citizens), we managed to pull most of the necessary data, minimizing the need for citizens to enter them. The challenge was finding a way to clearly communicate to the citizens where the data was coming from.</p>
+    <p>We proceeded with caution given that this is one of the first time such a large amount of personal data is being pulled across government agencies. We tested the reactions of the citizens during the usability tests. Most of them appreciated the convenience but noted the possible dangers of their data being so freely accessible.</p>
+    <p>We settled on having a bar above the input fields to inform the citizens of where their particulars are being pulled from with a link to find out more. Naturally, we also gave them the option to clear the retrieved data and enter their own to proceed. </p>
+    <img class="img" alt="myinfo" src="img/hdbinfo.png">
+    <p><i>Interesting fact:</i> Extra caution had to be taken when couples, who are buying a flat together, are working out their payment plan online. A good number of citizens are not comfortable sharing the balance amount in their retirement accounts (government-managed), which can be used to pay for the flat, with their other half.</p>
+    <p>To resolve it, we added an additional layer of friction, requesting the citizens to give explicit consent via their national identification credentials before pulling the data. Should they choose not to do so, a customer relationship manager would then serve as the neutral third party to work out their payment plan.</p>
+    <h4><br>Other Considerations</h4>
+    <p>We also explored refreshing HDB's style which used a number of dark colours to a lighter palette to help make the complex information we needed to communicate more palatable (pun intended). Having a more conversational tone and taking a more casual approach (confetti!) was also briefly considered.</p>     
+    <div class="imgblock">
+        <div class="imgside"><img class="img2" alt="one of the mid fidelity UI" src="img/hdbexplore.jpg"></div>
+        <div class="imgside"><img class="img2" alt="one of the mid fidelity UI" src="img/hdbcongrats.jpg"></div>
+    </div>
+    <p><i>Unfortunate fact:</i> A significant number of people who are selling their flats are not doing it for joyous reasons. (e.g. tight finances, inherited the flat from a relative who passed and so on) Thus, we made the decision to do away with the confetti and maintain a more serious tone.</p>
+    <p><br></p>
+    <h3>Design</h3>
+    <p>With a clearer idea of the layout and style in mind, the team started coding the prototype using the foundation framework to kickstart the process. At every incremental stage, we arranged usability testing sessions to get feedback.</p>
+    <p>We used retrospective think-aloud sessions. Using recordings with the citizen's eye-tracking overlayed helped us further probe into the motivations underpinning their decisions.</p>
+    <p>The more we tested and refined the design, the more our users focused on the right pieces of information. </p>
+    <img class="img" alt="heatmap generated from the eye tracking test" src="img/hdb2.png">
+    <h3>Impact</h3>
+    <p>After months of work, we delivered the design and saw it go live on Jan 2018. Months of work was validated by actual citizen feedback through news coverage on the various citizens' experience with the portal.</p>
+    <h5>1st Jan 18 - <a href="https://www.straitstimes.com/singapore/smoother-transactions-with-hdb-resale-portal">Smoother transactions with HDB resale portal</a>
+      <br>10th Mar 18 - <a href="https://www.straitstimes.com/singapore/first-deal-on-new-hdb-resale-portal-is-completed-in-half-the-time">First deal on new HDB resale portal is completed in half the time</a>
+      <br>10th Mar 18 - <a href="https://www.straitstimes.com/singapore/first-deal-on-new-hdb-resale-portal-is-completed-in-half-the-time">2,000 flat owners get green light to sell their flats through new resale portal: HDB</a></h5>
+  </div>
+  <img class="img fullwidth-img" alt="hdb portal news coverage" src="img/hdbnews.jpg">
+  <div class="article" style="margin-top: 0px;"> 
+    <p>On a more personal note, my greatest validation was hearing a new colleague exclaim after learning that I was involved in the project:
+    <h3>"My dad can barely read or speak English but I drew a quick explanation for him and he completed the entire application on his own online."</h3></p>
+    <p><br></p>
+    <h3>Reflection</h3>
+    <p>The design for the portal is nowhere near perfect but it is a good first cut. I look forward to seeing how HDB will continue to grow and improve the portal.</p>
+    <p>Personally, I grew a lot as a designer, particularly in conducting research and testing my designs. I gained a new understanding of how operations at another government agency work and how the research we do can furnish them with a deeper understanding of the citizens.</p>
+      <p>I also upskilled in my familiarity with the foundation framework and my understanding of responsive web design. Coding the prototype allowed us to reach a fidelity closest to what the design would be like in production and helped us save the effort in creating a separate prototype for the mobile and tablet views (yay media queries!). </p>
+    <p>You may visit the portal <a href="http://www.designwithstuck.com/portfolio/matr/" target="_top">here</a> if you have SingPass credentials.</p>
+  </div>
+
+    <img class="img fullwidth-img" alt="hdb mockup" src="img/hdbmockup.jpg">
+
+{% import 'macros/projectnav.nunjucks' as projectnav %}
+{{projectnav.active('hdb')}}
+
+{% include 'partials/footer.nunjucks' %}
+
+{% endblock %}

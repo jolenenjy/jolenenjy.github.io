@@ -1,0 +1,81 @@
+{% extends "layout.nunjucks" %}
+
+{% block meta %}
+<title>Jolene Ng – Portfolio</title>
+<meta name="description" content="Portfolio of Jolene Ng, an experience designer from Sunny Singapore.">
+{% endblock %}
+
+{% block content %}
+
+{% import 'macros/navigation.nunjucks' as nav %}
+{{nav.active('Projects')}}
+
+<div class="title">
+    <h1>Oh hello there, I'm Jolene 👋🏼</h1>
+    <h2>I'm an experience designer who sometimes writes code.<br>I care about bringing value to the world with the products I design.</h2>
+</div>
+
+  <div class="project">
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <div class="gutter-sizer"></div>
+      <div class="grid-item disabled">
+        <a class="project-link noallow" href="#">
+          <div class="project-left p0"></div>
+          <div class="des">
+            <h3>Parents Gateway</h3>
+            <h4>Improving school - parent communications in Singapore. <i>(Coming soon)</i></h4>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a class="project-link" href="hdb.html">
+          <div class="project-left p1"></div>
+          <div class="des">
+            <h3>HDB Resale Portal</h3>
+            <h4>Streamlining the process of buying and selling public housing in Singapore.</h4>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a class="project-link" href="meter.html">
+          <div class="project-left p2"></div>
+          <div class="des">
+            <h3>Meter</h3>
+            <h4>Smart metering app to keep track of utility consumption.</h4>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a class="project-link" href="nus.html">
+          <div class="project-left p3"></div>
+          <div class="des">
+            <h3>NUS DID Gradshow 16</h3>
+            <h4>Event site for the NUS DID gradshow 2016.</h4>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a class="project-link" href="visa.html">
+          <div class="project-left p4"></div>
+          <div class="des">
+            <h3>VisaRing</h3>
+            <h4>Envisioning the 21st century VISA payment experience.</h4>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a class="project-link" href="past.html">
+          <div class="project-left p5"></div>
+          <div class="des">
+            <h3>Past Projects</h3>
+            <h4>Snap shots of some of my past projects.</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  
+{% include 'partials/footer.nunjucks' %}
+
+{% endblock %}

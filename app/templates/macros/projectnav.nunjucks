@@ -1,0 +1,12 @@
+{% macro active(activePage='Projetcs') %}
+<div class="article links">
+  <h3>Other Projects</h3>
+  <p>
+  <a class="{%if activePage == 'hdb' %} disablelink {% endif %}" href="hdb.html">HDB Resale Portal</a>
+  <a class="{%if activePage == 'meter' %} disablelink {% endif %}" href="meter.html">Meter</a>
+  <a class="{%if activePage == 'nus' %} disablelink {% endif %}" href="nus.html">NUS DID Gradshow</a>
+  <a class="{%if activePage == 'visa' %} disablelink {% endif %}" href="visa.html">VisaRing</a>
+  <a class="{%if activePage == 'past' %} disablelink {% endif %}" href="past.html">Past Projects</a>
+  </p>
+</div>
+{% endmacro %}

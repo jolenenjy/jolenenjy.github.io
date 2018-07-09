@@ -1,0 +1,45 @@
+{% extends "layout.nunjucks" %}
+
+{% block meta %}
+<title>Jolene Ng – Playground</title>
+<meta name="description" content="Playground for trying new things by Jolene Ng.">
+{% endblock %}
+
+{% block content %}
+
+{% import 'macros/navigation.nunjucks' as nav %}
+{{nav.active('Playground')}}
+
+<div class="title">
+    <h1>I like learning new skills 🤩</h1>
+    <h2>In my free time, I try my hand at other things.<br>These are some of the stuff I created in my after work hours.</h2>
+</div>
+
+  <div class="project">
+    <div class="grid">
+      <div class="grid-sizer"></div>
+      <div class="gutter-sizer"></div>
+      <div class="grid-item">
+        <a class="project-link" href="motion.html">
+          <div class="project-left e1"></div>
+          <div class="des">
+            <h3>Illustrations / Motion</h3>
+            <h4>Some illustrations and attempts at animation</h4>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a class="project-link" href="tools.html">
+          <div class="project-left e2"></div>
+          <div class="des">
+            <h3>Tools / Templates</h3>
+            <h4>Boilerplates or simple tools to help me save time</h4>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+{% include 'partials/footer.nunjucks' %}
+
+{% endblock %}

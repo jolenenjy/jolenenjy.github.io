@@ -1,0 +1,14 @@
+{% macro active(activePage='Projetcs') %}
+<nav class="nav">
+  <div class="nav-wrap">
+    <a href="index.html">
+      <img src="img/logo.png" alt="logo" class="logo">
+    </a>
+    <div>
+      <a href="about.html" class="{%if activePage == 'About' %} active {% endif %} nav-link">About</a>
+      <a href="playground.html" class="{%if activePage == 'Playground' %} active {% endif %} nav-link">Playground</a>
+      <a href="index.html" class="{%if activePage == 'Projects' %} active {% endif %} nav-link">Projects</a>
+    </div>
+  </div>
+</nav>
+{% endmacro %}

@@ -1,0 +1,62 @@
+{% extends "layout.nunjucks" %}
+
+{% block meta %}
+<title>Jolene Ng – Past</title>
+<meta name="description" content="Past projects by Jolene Ng.">
+{% endblock %}
+
+{% block content %}
+
+{% import 'macros/navigation.nunjucks' as nav %}
+{{nav.active('About')}}
+
+  <div class="article">
+    <h1>Past Projects</h1>
+    <p>A collection of past projects that helped me grow into the designer I am today. This page is a collection of snapshots for the different projects so I won't be diving into my role and details for each of them. Scroll to see more if you are interested. (Warning, it might be a little long)</p>
+    <p><br></p>
+    <h3>MATr</h3>
+    <p>A 3d printed lifestyle object born from the curiosity of the limitations of 3d printing.</p>
+    <p><a href="http://www.designwithstuck.com/portfolio/matr/" target="_top">Link</a> for more information.</p>
+    <h5>Exhibited and published at:</h5>
+    <h5> 2016.03 — MATr, NUS Open House<br> 2016.01 — MATr, Singapore Arts Museum<br> 2015.03 — MATr, Triennale Design Museum (Milan Design Week)</h5>
+    <h5>2015.04 — Page 28, 灯的狂想曲 - Lianhe Zaobao<br>2015.04 — Singapore Design: The Alchemists Exhibition at Milan Design Week 2015 - designboom</h5>
+    <div class="imgblock">
+      <div class="imgside"><img class="img2" alt="image of product" src="img/matr3.jpg"></div>
+      <div class="imgside"><img class="img2" alt="image of product taken apart" src="img/matr4.jpg"></div>
+    </div>
+  </div>
+    <img class="img fullwidth-img" alt="image of product on display" src="img/matr2.png">
+
+    <div class="article" style="margin-top: 30px;">
+    <h3><br>Aether</h3>
+    <p><i>Interactive light installation</i></p>
+    <img class="img" alt="installation explanation" src="img/aether2.png">
+    <div class='embed-container'><iframe src="https://player.vimeo.com/video/159895083" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe></div>
+  </div>
+
+  <img class="img fullwidth-img" alt="installation title" src="img/aether.png">
+  
+    <div class="article" style="margin-top: 30px;"> 
+    <h3><br>This or That</h3>
+    <p><i>In collaboration with Essec Business School</i></p>
+    <img class="img" alt="app intro" src="img/tot3.png">
+    <img class="img" alt="app explanation" src="img/tot4.png">
+  </div>
+
+  <img class="img fullwidth-img" alt="app UI" src="img/tot5.png">
+
+    <div class="article" style="margin-top: 30px;"> 
+    <h3><br>Klare</h3>
+    <p><i>In collaboration with Suntar Filtration</i></p>
+    <img class="img" alt="current water filter" src="img/klare1.png">
+    <img class="img" alt="changes we made" src="img/klare2.png">
+  </div>
+
+  <img class="img fullwidth-img" alt="proposed water filter design" src="img/klare3.jpg">
+
+{% import 'macros/projectnav.nunjucks' as projectnav %}
+{{projectnav.active('past')}}
+
+{% include 'partials/footer.nunjucks' %}
+
+{% endblock %}

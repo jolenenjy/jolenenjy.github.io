@@ -1,0 +1,32 @@
+{% extends "layout.nunjucks" %}
+
+{% block meta %}
+<title>Jolene Ng – Motion</title>
+<meta name="description" content="Motion experiments by Jolene Ng.">
+{% endblock %}
+
+{% block content %}
+
+{% import 'macros/navigation.nunjucks' as nav %}
+{{nav.active('Na')}}
+
+<div class="article">
+  <h1>Illustration / Motion</h1>
+  <p>A little joy of mine is being able to bring things to life. This page records my ongoing effort to get better at illustrating and animating. </p>
+  <p><br></p>
+  <div class="imgblock">
+    <div class="imgside"><a href=""><img class="img2" alt="dribbble gif" src="img/motion1.gif"></a></div>
+    <div class="imgside"><img class="img2" alt="robot gif" src="img/motion2.gif"></div>
+  </div>
+  <div class="imgblock">
+    <div class="imgside"><img class="img2" alt="dribbble gif" src="img/motion3.gif"></div>
+    <div class="imgside"><img class="img2" alt="robot gif" src="img/motion4.gif"></div>
+  </div>
+</div>
+
+{% import 'macros/playgroundnav.nunjucks' as playgroundnav %}
+{{playgroundnav.active('motion')}}
+
+{% include 'partials/footer.nunjucks' %}
+
+{% endblock %}
