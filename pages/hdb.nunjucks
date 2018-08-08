@@ -16,7 +16,9 @@
     <div class="block">
         <h3>My Role</h3>
         <p>I assisted with the research and testing activities, produced most of the deliverables (e.g. journey maps, service blueprints and reports) and lead the design of the UI. Together with two other individuals, we developed the prototype using foundation before proceeding to present it to both the CEO of HDB and Minister of National Development. </p>
-      </div>
+        <h3><br/>Tools</h3>
+        <p>Sketch, HTML/CSS/JS, Foundation, Framer</p>
+    </div>
   </div>
   <img class="img fullwidth-img" alt="HDB MOCKUP" src="img/hdb0.jpg">
   <div class="article" style="margin-top: 0px;">

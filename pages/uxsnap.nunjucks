@@ -1,0 +1,64 @@
+{% extends "layout.nunjucks" %}
+
+{% block meta %}
+<title>Jolene Ng – UX Snapshots</title>
+<meta name="description" content="Showcase of the Visa concept by Jolene Ng.">
+{% endblock %}
+
+{% block content %}
+
+{% import 'macros/navigation.nunjucks' as nav %}
+{{nav.active('Na')}}
+
+  <div class="article">
+      <h1>UX Snapshots</h1>
+    <p>Here lies a collection of my previous ux projects and a brief summary of my role and tools used for each of them.</p>
+   
+    <div class="block">
+      <h3>NUS DID Gradshow event site</h3>
+      <p>For the NUS DID Grad show 2016, a showcase website for the graduating batch was required. While there was the option to use an existing website builder, I decided to take on the task of developing it.</p>
+      <p>You may visit the site
+      <a href="http://did.nus.edu.sg/gradshows/2016/" target="_top">here</a>.</p>
+      <h4><br/>My Role</h4>
+      <p>I started designing and developing the website after a night of tutorials. Taking the opportunity to learn more about front-end development, I gained a better appreciation for responsive web dev and design.</p>
+      <h4><br/>Tools</h4>
+      <p>Sketch, HTML/CSS/JS</p>
+    </div>
+   <img class="img" alt="interactive header" src="img/nus2.gif">
+  </div>
+    <img class="img fullwidth-img" alt="the main two pages for the NUS DID website" src="img/nus1.png">
+
+  <div class="article" style="margin-top: 30px;">
+  <div class="block">
+      <h3>VisaRing</h3>
+      <p>VISA Design Storm is a 4-day workshop that seeks to envision VISA payment of the 21st century. It intends to inform and influence how people everywhere in the world will conduct VISA payments and how it will function as a bridge to evolving digital world.</p>
+      <p>As part of a four man team, we worked a future concept for visa payments.</p>
+      <h4><br/>My Role</h4>
+      <p>I was primarily in charge of ideation and storytelling. Other than pitching our idea, I also worked alongside a teammate on the prototyping.</p>
+      <h4><br/>Tools</h4>
+      <p>Origami, After Effects, 3D printing</p>
+    </div>
+    <img class="img" alt="visa UI animation" src="img/visa.gif">
+  </div>
+  <img class="img fullwidth-img" alt="visa logo animation" src="img/visalogo2.gif">
+
+  <div class="article" style="margin-top: 30px;"> 
+    <h3><br>This or That</h3>
+    <p><i>In collaboration with Essec Business School</i></p>
+    <p><i>This or that</i> is a product discovery app that allows users to browse for products online without being overwhelmed by options. By reinventing the shopping experience as a comparison game, we can both collect the user's preferences while allowing them to browse.</p>
+      <h4><br/>My Role</h4>
+      <p>Together with another teammate, we lead the project from inception to iterations. I took charge of pitching, prototyping the iteractions and assisted with the UI deisgn.</p>
+      <h4><br/>Tools</h4>
+      <p>Origami, After Effects, Pixate</p>
+    <img class="img" alt="app intro" src="img/tot3.png">
+    <img class="img" alt="app explanation" src="img/tot4.png">
+  </div>
+
+  <img class="img fullwidth-img" alt="app UI" src="img/tot5.png">
+
+{% import 'macros/projectnav.nunjucks' as projectnav %}
+{{projectnav.active('visa')}}
+
+{% include 'partials/footer.nunjucks' %}
+
+{% endblock %}

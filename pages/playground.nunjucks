@@ -12,7 +12,7 @@
 
 <div class="title">
     <h1>I like learning new skills 🤩</h1>
-    <h2>In my free time, I try my hand at other things.<br>These are some of the stuff I created in my after work hours.</h2>
+    <h2>In my free time, I try my hand at other things.<br>These are some of the stuff I work on in my after work hours.</h2>
 </div>
 
   <div class="project">
@@ -34,6 +34,15 @@
           <div class="des">
             <h3>Tools / Templates</h3>
             <h4>Boilerplates or simple tools to help me save time</h4>
+          </div>
+        </a>
+      </div>
+      <div class="grid-item">
+        <a class="project-link" href="https://medium.com/adventures-of-a-designer">
+          <div class="project-left e3"></div>
+          <div class="des">
+            <h3>Adventures of a designer</h3>
+            <h4>Comics featuring a designer's musings<br/>(Link out to medium)</h4>
           </div>
         </a>
       </div>

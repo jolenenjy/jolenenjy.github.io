@@ -8,11 +8,11 @@
 {% block content %}
 
 {% import 'macros/navigation.nunjucks' as nav %}
-{{nav.active('About')}}
+{{nav.active('Na')}}
 
   <div class="article">
     <h1>Past Projects</h1>
-    <p>A collection of past projects that helped me grow into the designer I am today. This page is a collection of snapshots for the different projects so I won't be diving into my role and details for each of them. Scroll to see more if you are interested. (Warning, it might be a little long)</p>
+    <p>A collection of past projects in industrial design and interactive art that helped me grow into the designer I am today. This page is intended to be a collection of snapshots so I won't be diving into my role and details for each of them. Scroll to see more if you are interested. (Warning, it might be a little long)</p>
     <p><br></p>
     <h3>MATr</h3>
     <p>A 3d printed lifestyle object born from the curiosity of the limitations of 3d printing.</p>
@@ -35,15 +35,6 @@
   </div>
 
   <img class="img fullwidth-img" alt="installation title" src="img/aether.png">
-  
-    <div class="article" style="margin-top: 30px;"> 
-    <h3><br>This or That</h3>
-    <p><i>In collaboration with Essec Business School</i></p>
-    <img class="img" alt="app intro" src="img/tot3.png">
-    <img class="img" alt="app explanation" src="img/tot4.png">
-  </div>
-
-  <img class="img fullwidth-img" alt="app UI" src="img/tot5.png">
 
     <div class="article" style="margin-top: 30px;"> 
     <h3><br>Klare</h3>
