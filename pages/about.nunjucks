@@ -23,6 +23,7 @@
       <img id="illobg" src="img/about.gif" >
     </div> 
 
-{% include 'partials/footer.nunjucks' %}
+{% import 'macros/footer.nunjucks' as footer %}
+{{footer.active('About')}}
 
 {% endblock %}

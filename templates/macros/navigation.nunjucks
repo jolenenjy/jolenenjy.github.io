@@ -1,4 +1,4 @@
-{% macro active(activePage='Projetcs') %}
+{% macro active(activePage='Projects') %}
 <nav class="nav">
   <div class="nav-wrap">
     <a href="index.html">

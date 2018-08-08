@@ -1,4 +1,5 @@
-  <footer>
+{% macro active(activePage='About') %}
+  <footer class="{%if activePage == 'About' %} footerbg {% endif %}">
     <ul class="social_icons">
       <li>
         <a title="linkedin" href="https://www.linkedin.com/in/jolenenjy/">
@@ -33,3 +34,4 @@
     </ul>
     <p>© 2018 Jolene Ng Jia Ying</p>
   </footer>
+{% endmacro %}

@@ -73,6 +73,7 @@
 {% import 'macros/projectnav.nunjucks' as projectnav %}
 {{projectnav.active('meter')}}
 
-{% include 'partials/footer.nunjucks' %}
+{% import 'macros/footer.nunjucks' as footer %}
+{{footer.active('Na')}}
 
 {% endblock %}

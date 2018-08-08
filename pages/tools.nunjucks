@@ -34,6 +34,7 @@
 {% import 'macros/playgroundnav.nunjucks' as playgroundnav %}
 {{playgroundnav.active('tools')}}
 
-{% include 'partials/footer.nunjucks' %}
+{% import 'macros/footer.nunjucks' as footer %}
+{{footer.active('Na')}}
 
 {% endblock %}
