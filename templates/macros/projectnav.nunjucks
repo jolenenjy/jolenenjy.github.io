@@ -2,6 +2,7 @@
 <div class="article links">
   <h3>Other Projects</h3>
   <p>
+  <a class="{%if activePage == 'pg' %} disablelink {% endif %} hidden" href="pg.html">Parents Gateway</a>
   <a class="{%if activePage == 'masthead' %} disablelink {% endif %}" href="masthead.html">Masthead revamp</a>
   <a class="{%if activePage == 'hdb' %} disablelink {% endif %}" href="hdb.html">HDB Resale Portal</a>
   <a class="{%if activePage == 'meter' %} disablelink {% endif %}" href="meter.html">Meter</a>

@@ -57,7 +57,7 @@
   <img class="img fullwidth-img" alt="app UI" src="img/tot5.png">
 
 {% import 'macros/projectnav.nunjucks' as projectnav %}
-{{projectnav.active('visa')}}
+{{projectnav.active('uxsnap')}}
 
 {% import 'macros/footer.nunjucks' as footer %}
 {{footer.active('Na')}}

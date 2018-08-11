@@ -19,12 +19,12 @@
     <div class="grid">
       <div class="grid-sizer"></div>
       <div class="gutter-sizer"></div>
-      <div class="grid-item disabled">
-        <a class="project-link noallow" href="#">
+      <div class="grid-item ">
+        <a class="project-link " onClick="passWord()">
           <div class="project-left p0"></div>
           <div class="des">
-            <h3>Parents Gateway</h3>
-            <h4>Improving school - parent communications in Singapore. <i>(Coming soon)</i></h4>
+            <h3>Parents Gateway 🔒</h3>
+            <h4>Improving school - parent partnership in Singapore. <i>(Password protected)</i></h4>
           </div>
         </a>
       </div>

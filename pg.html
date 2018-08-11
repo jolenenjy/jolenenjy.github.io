@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="author" content="Jolene Ng">
+  
+<title>Jolene Ng – Parents Gateway</title>
+<meta name="description" content="Case study on the Meter app concept by Jolene Ng.">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <link rel="shortcut icon" href="img/favi.png">
+  <link rel="stylesheet" href="css/main.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112609230-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+  
+    gtag('config', 'UA-112609230-1');
+  </script>
+</head>
+<body>
+
+  
+
+
+
+<nav class="nav">
+  <div class="nav-wrap">
+    <a href="index.html">
+      <img src="img/logo.png" alt="logo" class="logo">
+    </a>
+    <div>
+      <a href="about.html" class=" nav-link">About</a>
+      <a href="playground.html" class=" nav-link">Playground</a>
+      <a href="index.html" class=" nav-link">Projects</a>
+    </div>
+  </div>
+</nav>
+
+
+  <div class="article">
+    <h1>Parents Gateway</h1>
+    <p>Parents Gateway is a web and mobile app that strengthens school-home partnership to support students in their education journey. Developed together with the Ministry of Education, the product is currently in alpha and will soon be moving into beta.</p>
+    <div class="block">
+      <h3>My Role</h3>
+      <p>I am the sole designer for the beta mobile app and assist with the design of the web app. Together with one other deisgner, we cover all the research, illustrations and testing needs apart from the UI and interaction design. </p>
+      <p>Addtionally, with both of us being designers who enjoys coding, we often jump into the source code to set up the base patterns and naming conventions for the various front end styles. (+ fixing component styles along the way 😅)</p>
+    <h3><br/>Tools</h3>
+      <p>Sketch, Framer, After Effects, Overflow, Catalog<br/>Google Tag Manager, Firebase, Jira, React, React Native</p>
+    </div>
+  </div>
+  <img class="img fullwidth-img" alt="pg web and mobile app" src="img/pg2.png">
+  <div class="article" style="margin-top: 0px;">
+    <div class="block">
+      <h3>The Challenge</h3>
+      <p>Teachers in Singapore are overly bogged down by administrative matters in their day to day work. This takes away from their ability to focus on their core job – education. </p>
+      <p>Thus, the question for us was: How might we help teachers reduce their time spent on administrative work?</p>
+    </div>
+    <h3>Discovery</h3>
+    <p>From there we dived into the various administrative matters a teacher has to deal with across the school year.</p>
+  </div>
+    <img class="img fullwidth-img" alt="pg school year" src="img/pg3.png">
+  <div class="article" style="margin-top: 0px;">
+    <p>After a few session with various teachers, we found that <b>sending announcements and collecting consent forms from parents</b> was the most time consuming activity (most frequent across the year + difficulty). We decided to explore how we could improve that process.</p>
+    <p>Today, teachers will distribute physical copies of a consent form or announcement to students to pass to their parents. Most forms will require a parent's signature. This leads to multiple issues including lost forms, mismatched schedules and so on, causing teachers to spend a lot of time chasing for them.</p>
+    <img class="img" alt="messybackpack" src="img/backpack.jpg">
+    <span class="caption"><i>The form is in there somewhere</i></span>
+    <p>Thus, we decided on digitalising the process of sending and collating consent forms (+ school announcements) to help teachers reach parents directly for official matters.</p>
+    <p>Given that the teachers will be dealing with a large amount of information, we choose to first develop a <b>web app for schools</b>. On the other hand, given the frequent and unpredictable nature of school annoucements, a <b>mobile app for parents</b> was the most efficient way to reach them.</p>
+    <h3><br/>Alpha</h3>
+    <p>Unfortunately, during the development of alpha, there wasn't a designer involved in the project (It was done before having us involved). As such, the version of the mobile app and web app below was made available to 11 schools with quite a number of usability issues.</p>
+    <img class="img" alt="alpha app" src="img/pg-alpha.jpg">
+    <span class="caption"><i>That pink 😱</i></span>
+    <p>However, it also allowed us to learn a lot about what features were actually useful and what culd use a little tweaking. These considerations were constantly brought up as we planned and designed for the beta product.</p>
+    <h3><br/>Design</h3>
+    <p>I slowly transitioned into the project from another and started by working closely with the product manager to understand the upcoming tickets and requirements. Over time, the app was designed incrementally through rounds of iterations. Throughout the way, revising and referring to the overall flow.</p>
+  </div>
+  <img class="img fullwidth-img" alt="pg app flow" src="img/pg-flow.png">
+    <div class="article" style="margin-top: 0px;">
+    <span class="caption"><i><a href="https://overflow.io/s/E33Y22/">https://overflow.io/s/E33Y22/</a></i></span>
+    <div class="block">
+      <h4>Key Design Challenge #1: </h4>
+      <h3>How might we inform parents that we will be retrieving their child's information atuomatically and protect individuals with <i>secret</i> children.</h3>
+      <p>In alpha, parents had to input their child's IC number individually. This was primarily due to the fear that individuals with children their spouses are unaware of might have their secrets revealed. As the government, it is not in our interest or intention to break families apart.</p>
+      <p>Thus, when we made the call to retreive the child's information with a tap of the button, we intentionally added a page to inform them before doing so.</p>
+      <img class="img" alt="onboarding pages" src="img/pg-onboarding.png">
+      <h4>Key Design Challenge #2: </h4>
+      <h3>How might we cater to parents who just wants to get things done without sacrificing the needs of parents who want to see more?</h3>
+      <p>From our research, we identified four groups of Singaporean parents: <br/>The kiasu – who wants too much information.<br/>The proactive – who will comb through everything the school sends. <br/>The reactive – who wants sufficent information.<br/>The disengaged – who just want to get the necessary tasks done.</p>
+      <p> We wanted to ensure that our product did not just serve parents who had the luxury of time but also the ones who are busy making a living (mostly the reason why they are disengaged). Hence, we made a point to have a to-do list as one of the main navigation items.
+      <img class="img" alt="todo pages" src="img/pg-todo.png">
+      <h4>Key Design Challenge #3: </h4>
+      <h3>How might we empower parents to reply to teachers without resulting in more administrative work for them?</h3>
+      <p>Currently, we are exploring how we could allow parents to send messages to schools without increasing the workload of the teachers. What we have found was that the reasons for communication today seem to revolve around set topics like the child being on medical leave and so on.</p>
+      <p>It is increasingly apparent that a chat system would <b>NOT</b> be the solution but perhaps something more along the lines of a status update that doesn't involve any tone.</P>
+      <h4><br>Other Design Challenge: </h4>
+      <h3>Designing for performance and react native</h3>
+      <p>Throughout the process, I have learned quite a bit on designing for performance and the trade-offs between lazy-loading and paginations.</p>
+      <p>I have also started to keep a list of pointers on designing for react native covering a few components like web view, alerts, keyboard avoiding view and push notification behaviors.</p>
+    </div>
+<div class="block">
+    <h3>On-going Reflection</h3>
+    <p>I am grateful to be on a product team where I am empowered as a designer to give user inputs and guide the product direction. Along the way, I have learned a lot on what it takes to work with developers. Particularly so when I hit a roadblock trying to edit something in the source code.</p>
+    <p>Additionally, I giggle slightly at being able to retun to my alma-meter to help design a solution for the problems they face. It lights up my face whenever a teacher or parent tells me how much this product would help them out.</P>
+    <p>I anticipate seeing how the product will fare with future releases. (and I hope to be a satisfied user one day 😉)</P>
+  </div>
+  </div>
+  <img class="img fullwidth-img" alt="parents gateway mockup" src="img/pg1.png">
+
+
+
+<div class="article links">
+  <h3>Other Projects</h3>
+  <p>
+  <a class=" disablelink  hidden" href="pg.html">Parents Gateway</a>
+  <a class="" href="masthead.html">Masthead revamp</a>
+  <a class="" href="hdb.html">HDB Resale Portal</a>
+  <a class="" href="meter.html">Meter</a>
+  <a class="" href="uxsnap.html">UX Snapshots</a>
+  <a class="" href="past.html">Other Projects</a>
+  </p>
+</div>
+
+
+
+
+  <footer class="">
+    <ul class="social_icons">
+      <li>
+        <a title="linkedin" href="https://www.linkedin.com/in/jolenenjy/">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a title="dribbble" href="https://dribbble.com/jolenenjy">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M90.2 228.2c8.9-42.4 37.4-77.7 75.7-95.7 3.6 4.9 28 38.8 50.7 79-64 17-120.3 16.8-126.4 16.7zM314.6 154c-33.6-29.8-79.3-41.1-122.6-30.6 3.8 5.1 28.6 38.9 51 80 48.6-18.3 69.1-45.9 71.6-49.4zM140.1 364c40.5 31.6 93.3 36.7 137.3 18-2-12-10-53.8-29.2-103.6-55.1 18.8-93.8 56.4-108.1 85.6zm98.8-108.2c-3.4-7.8-7.2-15.5-11.1-23.2C159.6 253 93.4 252.2 87.4 252c0 1.4-.1 2.8-.1 4.2 0 35.1 13.3 67.1 35.1 91.4 22.2-37.9 67.1-77.9 116.5-91.8zm34.9 16.3c17.9 49.1 25.1 89.1 26.5 97.4 30.7-20.7 52.5-53.6 58.6-91.6-4.6-1.5-42.3-12.7-85.1-5.8zm-20.3-48.4c4.8 9.8 8.3 17.8 12 26.8 45.5-5.7 90.7 3.4 95.2 4.4-.3-32.3-11.8-61.9-30.9-85.1-2.9 3.9-25.8 33.2-76.3 53.9zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zm-64 176c0-88.2-71.8-160-160-160S64 167.8 64 256s71.8 160 160 160 160-71.8 160-160z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a title="medium" href="https://medium.com/@jolenengjiaying">
+          <svg class="icon" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"viewBox="0 0 448 512">
+          <path d="M372.2,138.1l-24,23c-2.1,1.6-3.1,4.2-2.7,6.7v169.3c-0.4,2.6,0.6,5.2,2.7,6.7l23.5,23v5.1h-118V367l24.3-23.6
+            c2.4-2.4,2.4-3.1,2.4-6.7V199.8l-67.6,171.6h-9.1L125,199.8v115c-0.7,4.8,1,9.7,4.4,13.2l31.6,38.3v5.1H71.2v-5.1l31.6-38.3
+            c3.4-3.5,4.9-8.4,4.1-13.2v-133c0.4-3.7-1-7.3-3.8-9.8L75,138.1V133h87.3l67.4,148L289,133.1h83.2V138.1z M448,438.3V73.7
+            c0-22.9-18.8-41.7-41.7-41.7H41.7C18.8,32,0,50.8,0,73.7v364.6C0,461.2,18.8,480,41.7,480h364.6C429.2,480,448,461.2,448,438.3z"/>
+          </svg>
+        </a>
+      </li>
+      <li>
+        <a title="github" href="https://github.com/jolenenjy">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"/></svg>
+        </a>
+      </li>
+      <li>
+        <a title="facebook" href="https://www.facebook.com/jiaying.ng.5">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon"><path d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"/></svg>
+        </a>
+      </li>
+    </ul>
+    <p>© 2018 Jolene Ng Jia Ying</p>
+  </footer>
+
+
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

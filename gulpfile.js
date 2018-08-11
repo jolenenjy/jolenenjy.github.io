@@ -89,8 +89,6 @@ gulp.task('watch', function () {
     console.log('File ' + event.path + ' was ' + event.type + ', running tasks...');
   });
 
-  gulp.watch('./js/*', ['scripts']).on('change', browserSync.reload);
-
   // Watch nunjuck templates and reload browser if change
   gulp.watch(inputTemplates, ['nunjucks']).on('change', browserSync.reload);
 
