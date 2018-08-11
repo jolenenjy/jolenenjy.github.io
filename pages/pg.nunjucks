@@ -65,11 +65,16 @@
       <h4>Key Design Challenge #3: </h4>
       <h3>How might we empower parents to reply to teachers without resulting in more administrative work for them?</h3>
       <p>Currently, we are exploring how we could allow parents to send messages to schools without increasing the workload of the teachers. What we have found was that the reasons for communication today seem to revolve around set topics like the child being on medical leave and so on.</p>
-      <p>It is increasingly apparent that a chat system would <b>NOT</b> be the solution but perhaps something more along the lines of a status update that doesn't involve any tone.</P>
+      <p>It is increasingly apparent that a chat system would <b>NOT</b> be the solution but perhaps something more along the lines of a status update that doesn't involve any tone or it could lead to problems like this:</P>
+      <img class="img" alt="news article" src="img/pg-news.png">
       <h4><br>Other Design Challenge: </h4>
       <h3>Designing for performance and react native</h3>
       <p>Throughout the process, I have learned quite a bit on designing for performance and the trade-offs between lazy-loading and paginations.</p>
       <p>I have also started to keep a list of pointers on designing for react native covering a few components like web view, alerts, keyboard avoiding view and push notification behaviors.</p>
+      <h3><br>Measuring success metrics and collecting data</h3>
+      <p>On top of my design work, I took up the initiative to define success metrics for the product together with the product managers and worked with the developers on collecting the neccessary data.</p>
+      <p>Plus, I implemented firebase analytics for our react native app and google tag manager for the web app. From there, I realised that some of our developers work till 3am on a Saturday. 🙈</P>
+      <img class="img" alt="pg data" src="img/pg-data.png">
     </div>
 <div class="block">
     <h3>On-going Reflection</h3>
