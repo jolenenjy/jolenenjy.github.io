@@ -18,7 +18,7 @@
       <p>I am the sole designer for the beta mobile app and assist with the design of the web app. Together with one other designer, we cover all the research, illustrations and testing needs apart from the UI and interaction design. </p>
       <p>Additionally, with both of us being designers who enjoy coding, we often jump into the source code to set up the base patterns and naming conventions for the various front end styles. (+ fixing component styles along the way 😅)</p>
     <h3><br/>Tools</h3>
-      <p>Sketch, Framer, After Effects, Overflow, Catalog<br/>Google Tag Manager, Firebase, Jira, React, React Native</p>
+      <p>Sketch, Framer, After Effects, Overflow, Grafana + Prometheus<br/>Google Tag Manager, Firebase, Jira, React, React Native</p>
     </div>
   </div>
   <img class="img fullwidth-img" alt="pg web and mobile app" src="img/pg2.png">
@@ -39,11 +39,11 @@
     <span class="caption"><i>The form is in there somewhere</i></span>
     <p>Thus, we decided on digitalising the process of sending and collating consent forms (+ school announcements) to help teachers reach parents directly for official matters.</p>
     <p>Given that the teachers will be dealing with a large amount of information, we choose to first develop a <b>web app for schools</b>. On the other hand, given the frequent and unpredictable nature of school announcements, a <b>mobile app for parents</b> was the most efficient way to reach them.</p>
-    <h3><br/>Alpha</h3>
+    {# <h3><br/>Alpha</h3>
     <p>Unfortunately, during the development of alpha, there wasn't a designer involved in the project (It was done before having us involved). As such, the version of the mobile app and web app below was made available to 11 schools with quite a number of usability issues.</p>
     <img class="img" alt="alpha app" src="img/pg-alpha.jpg">
     <span class="caption"><i>That pink 😱</i></span>
-    <p>However, it also allowed us to learn a lot about what features were actually useful and what could use a little tweaking. These considerations were constantly brought up as we planned and designed for the beta product.</p>
+    <p>However, it also allowed us to learn a lot about what features were actually useful and what could use a little tweaking. These considerations were constantly brought up as we planned and designed for the beta product.</p> #}
     <h3><br/>Design</h3>
     <p>I slowly transitioned into the project from another and started by working closely with the product manager to understand the upcoming tickets and requirements. Over time, the app was designed incrementally through rounds of iterations.</P>
     <p>Throughout the way, we revised and refined the overall flow, cutting away many features for a more focused product.</p>
@@ -67,13 +67,14 @@
       <p>Currently, we are exploring how we could allow parents to send messages to schools without increasing the workload of the teachers. What we have found was that the reasons for communication today seem to revolve around set topics like the child being on medical leave and so on.</p>
       <p>It is increasingly apparent that a chat system would <b>NOT</b> be the solution but perhaps something more along the lines of a status update that doesn't involve any tone or it could lead to problems like this:</P>
       <img class="img" alt="news article" src="img/pg-news.png">
-      <h4><br>Other Design Challenge: </h4>
+      <h4><br>Other Design Challenges: </h4>
       <h3>Designing for performance and react native</h3>
       <p>Throughout the process, I have learned quite a bit about designing for performance and the trade-offs between lazy-loading and paginations.</p>
       <p>I have also started to keep a list of pointers on designing for react native covering a few components like web view, alerts, keyboard avoiding view and push notification behaviors.</p>
       <h3><br>Measuring success metrics and collecting data</h3>
-      <p>On top of my design work, I took up the initiative to define success metrics for the product together with the product managers and worked with the developers on collecting the necessary data.</p>
-      <p>Plus, I implemented firebase analytics for our react native app and google tag manager for the web app. From there, I realised that some of our developers work till 3am on a Saturday. 🙈</P>
+      <p>On top of my design work, I took up the initiative to define success metrics for the product together with the product managers and worked with the developers on collecting the necessary data and logs. </p>
+      <p>We are now working on a customised dashboard using grafana and prometheus to give us an overall view of the project. This will allow us to track how far along schools are in our engagement funnel in real time.</p>
+      <p>Plus, to track behavioural flows and funnels, I implemented firebase analytics for our react native app and google tag manager for the web app. From there, I realised that some of our developers work till 3am on a Saturday. 🙈</P>
       <img class="img" alt="pg data" src="img/pg-data.png">
     </div>
 <div class="block">
