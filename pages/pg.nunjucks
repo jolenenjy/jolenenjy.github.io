@@ -74,7 +74,7 @@
       <h3><br>Measuring success metrics and collecting data</h3>
       <p>On top of my design work, I took up the initiative to define success metrics for the product together with the product managers and worked with the developers on collecting the necessary data and logs. Initially, we explored using Kibana to visualise logs as a quick way to get some insight into some of the metrics. </p>
       <img class="img" alt="pg data" src="img/pg-kibana.png">
-      <p>However, we soon found that there were much more to be unearthed from the database directly, including what was being logged. We are now working on a customised dashboard using grafana and prometheus to give us an overall view of the project. This will allow us to track how far along schools are in our engagement funnel in real time.</p>
+      <p>However, we soon found that there were much more to be unearthed from the database directly, including what was being logged. We are now working on a customised dashboard using grafana and prometheus to give us an overall view of the project. This will allow us to track how far along schools are in our engagement funnel in real time (+ much more).</p>
       <p>Plus, to track behavioural flows and funnels, I implemented firebase analytics for our react native app and google tag manager for the web app. From there, I realised that some of our developers work till 3am on a Saturday. 🙈</P>
       <img class="img" alt="pg data" src="img/pg-data.png">
     </div>
