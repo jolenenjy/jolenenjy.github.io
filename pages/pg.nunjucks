@@ -12,11 +12,11 @@
 
   <div class="article">
     <h1>Parents Gateway</h1>
-    <p>Parents Gateway is a web and mobile app that strengthens school-home partnership to support students in their education journey. Developed together with the Ministry of Education, the product is currently in alpha and will soon be moving into beta.</p>
+    <p>Parents Gateway is a web and mobile app that strengthens school-home partnership to support students in their education journey. Developed together with the Ministry of Education, the product will soon be launched with pilot schools in October.</p>
     <div class="block">
       <h3>My Role</h3>
-      <p>I am the sole designer for the beta mobile app and assist with the design of the web app. Together with one other designer, we cover all the research, illustrations and testing needs apart from the UI and interaction design. </p>
-      <p>Additionally, with both of us being designers who enjoy coding, we often jump into the source code to set up the base patterns and naming conventions for the various front end styles. (+ fixing component styles along the way 😅)</p>
+      <p>I am the primary designer for the mobile app (react native) and assist with the design of the web app. Together with one other designer, we cover all the product design needs from research, usability testing, giving input to the product vision and roadmap to the UI and interaction design explorations and illustrations. </p>
+      <p>Additionally, with both of us being designers who enjoy coding, we often jump into the source code to set up the base patterns and naming conventions for the various front end styles. (+ fixing minor styles along the way 😅)</p>
     <h3><br/>Tools</h3>
       <p>Sketch, Framer, After Effects, Overflow, Grafana + Prometheus<br/>Google Tag Manager, Firebase, Jira, React, React Native</p>
     </div>
@@ -26,7 +26,7 @@
     <div class="block">
       <h3>The Challenge</h3>
       <p>Teachers in Singapore are overly bogged down by administrative matters in their day to day work. This takes away from their ability to focus on their core job – education. </p>
-      <p>Thus, the question for us was: How might we help teachers reduce their time spent on administrative work?</p>
+      <p>Thus, the question for us was: <b>How might we help teachers reduce their time spent on administrative work?</b></p>
     </div>
     <h3>Discovery</h3>
     <p>From there we dived into the various administrative matters a teacher has to deal with across the school year.</p>
@@ -35,38 +35,41 @@
   <div class="article" style="margin-top: 0px;">
     <p>After a few session with various teachers, we found that <b>sending announcements and collecting consent forms from parents</b> was the most time-consuming activity (most frequent across the year + difficulty).</p>
     <p>Today, teachers will distribute physical copies of a consent form or announcement to students to pass to their parents. Most forms will require a parent's signature. This leads to multiple issues including lost forms, mismatched schedules and so on, causing teachers to spend a lot of time chasing for them.</p>
+    <p>Additionally, parents, too, face mulitple issues with receiving the form from their child and returning the form on time etc.</p>
     <img class="img" alt="messybackpack" src="img/backpack.jpg">
     <span class="caption"><i>The form is in there somewhere</i></span>
-    <p>Thus, we decided on digitalising the process of sending and collating consent forms (+ school announcements) to help teachers reach parents directly for official matters.</p>
-    <p>Given that the teachers will be dealing with a large amount of information, we choose to first develop a <b>web app for schools</b>. On the other hand, given the frequent and unpredictable nature of school announcements, a <b>mobile app for parents</b> was the most efficient way to reach them.</p>
+    <p>Thus, we decided to tackle this problem space first.</p>
+    <p>Given that the teachers will be dealing with a large amount of information, we choose to first develop a <b>web app for schools</b>. On the other hand, given the frequent and unpredictable nature of school announcements, a <b>mobile app for parents</b> was the most conveninet way to receive them.</p>
     {# <h3><br/>Alpha</h3>
     <p>Unfortunately, during the development of alpha, there wasn't a designer involved in the project (It was done before having us involved). As such, the version of the mobile app and web app below was made available to 11 schools with quite a number of usability issues.</p>
     <img class="img" alt="alpha app" src="img/pg-alpha.jpg">
     <span class="caption"><i>That pink 😱</i></span>
     <p>However, it also allowed us to learn a lot about what features were actually useful and what could use a little tweaking. These considerations were constantly brought up as we planned and designed for the beta product.</p> #}
     <h3><br/>Design</h3>
-    <p>I slowly transitioned into the project from another and started by working closely with the product manager to understand the upcoming tickets and requirements. Over time, the app was designed incrementally through rounds of iterations.</P>
-    <p>Throughout the way, we revised and refined the overall flow, cutting away many features for a more focused product.</p>
+    <p>I transitioned into the product team from another and started by working closely with the product manager to understand the upcoming tickets and requirements. Over time, the app was designed incrementally through rounds of iterations.</P>
+    <p>Throughout the way, we revised and refined the overall flow, cutting away many features for a more focused product (and a more manageable first launch).</p>
   </div>
   <img class="img fullwidth-img" alt="pg app flow" src="img/pg-flow.png">
     <div class="article" style="margin-top: 0px;">
     <span class="caption"><i><a href="https://overflow.io/s/E33Y22/">https://overflow.io/s/E33Y22/</a></i></span>
     <div class="block">
-      <h4>Key Design Challenge #1: </h4>
-      <h3>How might we inform parents that we will be retrieving their child's information automatically and protect individuals with <i>secret</i> children.</h3>
-      <p>In alpha, parents had to input their child's IC number individually. This was primarily due to the fear that individuals with children their spouses are unaware of might have their secrets revealed. As the government, it is not in our interest or intention to break families apart.</p>
-      <p>Thus, when we made the call to retrieve the child's information with a tap of the button, we intentionally added a page to inform them before doing so.</p>
+    <p>Along the way, there were some interesting design challenges we encountered:</P>
+      <h4><br>Key Design Challenge #1: </h4>
+      <h3>How might we protect individuals with <i>secret</i> children?</h3>
+      <p>When we were mapping out the flow of the product, retreiving the children's data based on the user's ID number sounded natural. </p>
+      <p>However, we soon had feedback that this was a problem for individuals with additional children their spouses are unaware of. As the government, it is not in our interest or intention to break families apart by revealing any possible family secrets.</p>
+      <p>Thus, we intentionally added a page to the flow, both to inform the user and add additional friction. The users can then make the call to either proceed with onboarding at a later date or move ahead.</p>
       <img class="img" alt="onboarding pages" src="img/pg-onboarding.png">
       <h4>Key Design Challenge #2: </h4>
       <h3>How might we cater to parents who just want to get things done without sacrificing the needs of parents who want to see more?</h3>
-      <p>From our research, we identified four groups of Singaporean parents: <br/>The kiasu – who wants too much information.<br/>The proactive – who will comb through everything the school sends. <br/>The reactive – who wants sufficient information.<br/>The disengaged – who just want to get the necessary tasks done.</p>
+      <p>Researching on parents in Singapore, we identified four behavioural archetypes: <br/>The kiasu – who wants too much information.<br/>The proactive – who will comb through everything the school sends. <br/>The reactive – who wants sufficient information.<br/>The disengaged – who just want to get the necessary tasks done.</p>
       <p> We wanted to ensure that our product did not just serve parents who had the luxury of time but also the ones who are busy making a living (mostly the reason why they are disengaged). Hence, we made a point to have a to-do list as one of the main navigation items.
       <img class="img" alt="todo pages" src="img/pg-todo.png">
-      <h4>Key Design Challenge #3: </h4>
+      {# <h4>Key Design Challenge #3: </h4>
       <h3>How might we empower parents to reply to teachers without resulting in more administrative work for them?</h3>
-      <p>Currently, we are exploring how we could allow parents to send messages to schools without increasing the workload of the teachers. What we have found was that the reasons for communication today seem to revolve around set topics like the child being on medical leave and so on.</p>
+      <p>Currently, we are exploring how we could allow parents to send messages to schools without increasing the workload of the teachers. </p>
       <p>It is increasingly apparent that a chat system would <b>NOT</b> be the solution but perhaps something more along the lines of a status update that doesn't involve any tone or it could lead to problems like this:</P>
-      <img class="img" alt="news article" src="img/pg-news.png">
+      <img class="img" alt="news article" src="img/pg-news.png"> #}
       <h4><br>Other Design Challenges: </h4>
       <h3>Designing for performance and react native</h3>
       <p>Throughout the process, I have learned quite a bit about designing for performance and the trade-offs between lazy-loading and paginations.</p>
@@ -78,12 +81,17 @@
       <p>Plus, to track behavioural flows and funnels, I implemented firebase analytics for our react native app and google tag manager for the web app. From there, I realised that some of our developers work till 3am on a Saturday. 🙈</P>
       <img class="img" alt="pg data" src="img/pg-data.png">
     </div>
+    <h3>Current developed product:</h3>
+    </div>
+    <img class="img fullwidth-img" alt="parents gateway mockup" src="img/pg-mockups.png">
+    <div class="article" style="margin-top: 0px;">
 <div class="block">
     <h3>On-going Reflection</h3>
     <p>I am grateful to be on a product team where I am empowered as a designer to give user inputs and guide the product direction. Along the way, I have learned a lot on what it takes to work with developers. Particularly so when I hit a roadblock trying to edit something in the source code.</p>
     <p>While I did not elaborate on the design considerations for the web app here, that is probably a whole other complexity for another day.
     <p>Additionally, I giggle slightly at being able to return to my alma-meter to help design a solution for the problems they face. It lights up my face whenever a teacher or parent tells me how much this product would help them out.</P>
     <p>I anticipate seeing how the product will fare with future releases. (and I hope to be a satisfied user one day 😉)</P>
+  </div>
   </div>
   </div>
   <img class="img fullwidth-img" alt="parents gateway mockup" src="img/pg1.png">

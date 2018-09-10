@@ -94,6 +94,12 @@ nav {
   font-size: 0.8rem;
   color: $font-color-light;
   letter-spacing: 1.3px;
+  &:hover {
+    font-weight: 600;
+  } 
+  &:active {
+    font-weight: 600;
+  } 
 }
 
 .active{

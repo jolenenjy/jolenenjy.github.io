@@ -95,6 +95,14 @@ nav {
   letter-spacing: 1.3px;
 }
 
+.nav-link:hover {
+  font-weight: 600;
+}
+
+.nav-link:active {
+  font-weight: 600;
+}
+
 .active {
   color: #393e4b !important;
   font-weight: 600;
