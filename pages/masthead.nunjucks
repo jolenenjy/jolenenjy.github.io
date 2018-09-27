@@ -31,23 +31,23 @@
       <p>More importantly, it wasn't helping our citizens better navigate government websites. From our usability testing sessions, we noticed that users started to tune out the various items in the masthead due to the visual overload.</p>
     <img class="img" alt="old masthead" src="img/masthead3.png">
     <h3><br/>So, what challenges do agencies face implementing the masthead?</h3>
-      <p>1. The masthead is not designed to be responsive so agencies just don’t implement it in their mobile sites. That affects purpose #1 which is to have a consistent and recognisable mark across all government sites.</p>
+      <p>1. <b>The masthead is not designed to be responsive</b> so agencies just don’t implement it in their mobile sites. That affects purpose #1 which is to have a consistent and recognisable mark across all government sites.</p>
       <img class="img" alt="mobile gov sites" src="img/masthead4.png">
-      <p>2. There are no central resources for the masthead assets so the Singapore Government Logo is implemented in a highly inconsistent manner across websites.</p>
+      <p>2. There are <b>no central resources for the masthead assets</b> so the Singapore Government Logo is implemented in a highly inconsistent manner across websites.</p>
       <img class="img" alt="inconsistent gov logo" src="img/masthead5.png">
-      <p>3. The requirements of the masthead are too restrictive so agencies cannot adapt it to their agency’s context and website’s design</p>
+      <p>3. The requirements of the masthead are <b>too restrictive</b> so agencies cannot adapt it to their agency’s context and website’s design</p>
       <img class="img" alt="inconsistent implementation" src="img/masthead6.png">
-      <p>4. The masthead is not designed for flexibility of content so agencies have to be creative in squeezing in or removing elements.</p>
+      <p>4. The masthead is <b>not designed for flexibility of content</b> so agencies have to be creative in squeezing in or removing elements.</p>
       <img class="img" alt="inconsistent implementation" src="img/masthead7.png">
-      <p>Thus, the current masthead is <b>not</b> serving its intended purpose. As designers in government, we couldn't leave it as it is. We started exploring different variations of the masthead that could serve our objectives.</p>
+      <p>Thus, the current masthead guidelines is <b>not</b> serving its intended purpose. As designers in government, we couldn't leave it as it is. We started exploring different variations of the masthead that could serve our objectives.</p>
       <p><br/>We laid out clear <b>design principles</b> for our intended design:</p>
       <p>1. Recognisable yet not distracting</p>
       <p>2. Consistent yet flexible</p>
       <p>3. Modern and professional</p>
       <p><br/>After rounds of exploration and iterations, we settled on the following, forming a clear distinction between the component that informs people this is a government website, and the component that allows for a consistent experience i.e. standard positioning of the search bar.</p>
-      <p>The grey bar above helps establish the site as a government website, giving flexibility to any content that follows it. The other navigation items help to keep navigation consistent</p>
+      <p>The <b>grey bar above helps establish the site as a government website</B>, giving flexibility to any content that follows it. The <b>other navigation items help to keep navigation consistent.</b></p>
       <img class="img" alt="new masthead" src="img/masthead8.png">
-      <p>We also made a point to reposition various links that were previously in the header down into the footer.</p>
+      <p>We also made a point to reposition various links that were previously in the header down into the footer. (e.g. privacy, terms of use, contact us)</p>
       <img class="img" alt="new footer" src="img/masthead9.png">
       <p>+ it's mobile responsive.</p>
       <img class="img" alt="new footer" src="img/masthead10.png">
