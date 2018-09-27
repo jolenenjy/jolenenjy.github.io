@@ -7,6 +7,20 @@ $('.grid').masonry({
     percentPosition: true
   })
 
+$(function() {
+    var header = $(".nav-wrap");
+  
+    $(window).scroll(function() {    
+        var scroll = $(window).scrollTop();
+        if (scroll >= 50) {
+            header.addClass("scrolled");
+        } else {
+            header.removeClass("scrolled");
+        }
+    });
+  
+});
+
 function passWord() {
 var testV = 1;
 var pass1 = prompt('Please Enter Your Password',' ');
