@@ -72,9 +72,12 @@
     <span class="caption"><i>The form is in there somewhere</i></span>
     <p>Thus, we decided to tackle this problem space first.</p>
     <p>Given that the teachers will be dealing with a large amount of information, we choose to first develop a <b>web app for schools</b>. On the other hand, given the frequent and unpredictable nature of school announcements, a <b>mobile app for parents</b> was the most conveninet way to receive them.</p>
-    
+  </div>
+    <img class="img fullwidth-img" alt="pg interview" src="img/pg-interview.jpg">
+  <div class="article" style="margin-top: 0px;">
+  <span class="caption"><i>Conducting interviews with teachers at their break room</i></span>
     <h3><br/>Design</h3>
-    <p>I transitioned into the product team from another and started by working closely with the product manager to understand the upcoming features and requirements. Over time, the app was designed incrementally through rounds of iterations and testings.</P>
+    <p>I transitioned into the product team from another and started by working closely with the product manager to understand the product visions, user goals, business requirements and upcoming tasks. Over time, both products were designed incrementally through rounds of iterations and testings.</P>
     <p>Throughout the way, we revised and refined the overall flow, cutting away many features for a more focused product (and a more manageable first launch).</p>
   </div>
   <img class="img fullwidth-img" alt="pg app flow" src="img/pg-flow.png">
@@ -88,21 +91,25 @@
       <p>However, we soon had feedback that this was a problem for individuals with additional children their spouses are unaware of. As the government, it is not in our interest or intention to break families apart by revealing any possible family secrets.</p>
       <p>Thus, we intentionally added a page to the flow, both to inform the user and add additional friction. The users can then make the call to either proceed with onboarding at a later date or move ahead.</p>
       <img class="img" alt="onboarding pages" src="img/pg-onboarding.png">
-      <h4>Key Design Challenge #2: </h4>
-      <h3>How might we cater to parents who just want to get things done without sacrificing the needs of parents who want to see more?</h3>
-      <p>Researching on parents in Singapore, we identified four behavioural archetypes: <br/>The kiasu – who wants too much information.<br/>The proactive – who will comb through everything the school sends. <br/>The reactive – who wants sufficient information.<br/>The disengaged – who just want to get the necessary tasks done.</p>
-      <p> We wanted to ensure that our product did not just serve parents who had the luxury of time but also the ones who are busy making a living (mostly the reason why they are disengaged). Hence, we made a point to have a to-do list as one of the main navigation items.
-      <img class="img" alt="todo pages" src="img/pg-todo.png">
+      <span class="caption"><i>Confirmation page to retrieve data</i></span>
+      <h4><br>Key Design Challenge #2: </h4>
+      <h3>How might we help admins differentiate between the tasks they do as a user and an admin?</h3>
+      <p>For schools in Singapore, the administrator of the system (other than the school leader) is often, too, a teacher. This means that at any one time, an individual could be juggling both their tasks as a teacher and as an admin. After realising that the jobs to be done and mindset are distinctively different, we decided to clearly seperate the two.</p>
+      <p>This meant that the individual would be able to complete the tasks they need to do as a teacher, then cleanly switch over to the admin view to work on admin tasks, matching their current mental model.</p>
+      <img class="img" alt="teacher view" src="img/teacherview.png">
+      <span class="caption"><i>View for a normal user</i></span>
+      <img class="img" alt="admin view" src="img/adminview.png">
+      <span class="caption"><i>Admin View</i></span>
+      
       
       <h4><br>Other Design Challenges: </h4>
       <h3>Designing for performance and react native</h3>
       <p>Throughout the process, I have learned quite a bit about designing for performance and the trade-offs between lazy-loading and paginations.</p>
       <p>I have also started to keep a list of pointers on designing for react native covering a few components like web view, alerts, keyboard avoiding view and push notification behaviors.</p>
       <h3><br>Measuring success metrics and collecting data</h3>
-      <p>On top of my design work, I took up the initiative to define success metrics for the product together with the product managers and worked with the developers on collecting the necessary data and logs. Initially, we explored using Kibana to visualise logs as a quick way to get some insight into some of the metrics. </p>
+      <p>On top of my design work, I took up the initiative to define success metrics for the product together with the product managers and worked with the developers on collecting the necessary data and logs. We explored using Kibana to visualise logs as a quick way to get some insight into some of the metrics and are now working on a dashboard to pull real-time data from our DB. </p>
       <img class="img" alt="pg data" src="img/pg-kibana.png">
-      <p>However, we soon found that there were much more to be unearthed from the database directly, including what was being logged. We are now working on a customised dashboard using grafana and prometheus to give us an overall view of the project. This will allow us to track how far along schools are in our engagement funnel in real time (+ much more).</p>
-      <p>Plus, to track behavioural flows and funnels, I implemented firebase analytics for our react native app and google tag manager for the web app. From there, I realised that some of our developers work till 3am on a Saturday. 🙈</P>
+      <p>Plus, to track behavioural flows and funnels, I implemented firebase analytics for our react native app and google tag manager for the web app. Below shows the data collected for the onboarding funnel for our production server (high drop-offs from the first step since eng usually bypass onboarding 🙈).</P>
       <img class="img" alt="pg data" src="img/pg-data.png">
     </div>
     <h3>Current developed product:</h3>
