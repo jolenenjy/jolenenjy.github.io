@@ -99,7 +99,7 @@
     <p>The design for the portal is nowhere near perfect but it is a good first cut. I look forward to seeing how HDB will continue to grow and improve the portal.</p>
     <p>Personally, I grew a lot as a designer, particularly in conducting research and testing my designs. I gained a new understanding of how operations at another government agency work and how the research we do can furnish them with a deeper understanding of the citizens.</p>
       <p>I also upskilled in my familiarity with the foundation framework and my understanding of responsive web design. Coding the prototype allowed us to reach a fidelity closest to what the design would be like in production and helped us save the effort in creating a separate prototype for the mobile and tablet views (yay media queries!). </p>
-    <p>You may visit the portal <a href="http://www.designwithstuck.com/portfolio/matr/" target="_top">here</a> if you have SingPass credentials.</p>
+    <p>You may visit the portal <a href="https://services2.hdb.gov.sg/webapp/BB31AWDashboardWeb/BB31PLogin.jsp" target="_blank">here</a> if you have SingPass credentials.</p>
   </div>
 
     <img class="img fullwidth-img" alt="hdb mockup" src="img/hdbmockup.jpg">

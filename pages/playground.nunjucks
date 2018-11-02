@@ -38,7 +38,7 @@
         </a>
       </div>
       <div class="grid-item">
-        <a class="project-link" href="https://medium.com/adventures-of-a-designer">
+        <a class="project-link" href="https://medium.com/adventures-of-a-designer" target="_blank">
           <div class="project-left e3"></div>
           <div class="des">
             <h3>Adventures of a designer</h3>
