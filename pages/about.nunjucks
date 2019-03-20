@@ -11,9 +11,10 @@
 {{nav.active('About')}}
 
   <div class="article">
-    <h1>About me</h1>
-    <p>Hello again! My name is Jolene Ng.</p>
-    <p>I'm a UX designer with the Government of Singapore at <a href="https://www.tech.gov.sg/About-Us/GovTech-Teams/Government-Digital-Services/GDS">GovTech</a>, shaping the way citizens experience Government services. Currently, I work on the Parents Gateway mobile and web app, improving communications between parents and public schools.</p>
+    <h1>More about me</h1>
+    <p>Hello again! My name is Jolene Ng Jia Ying.</p>
+    <p>I am currently a product designer with <a href="https://dribbble.com/grab" target="_blank">Grab</a>, reimagining what transport, food and logistics can be like for people in Southeast Asia.</p>
+    <p>Before that, I was a UX designer with the Government of Singapore at <a href="https://www.tech.gov.sg/About-Us/GovTech-Teams/Government-Digital-Services/GDS" target="_blank">GovTech</a>, shaping the way citizens experience Government services.</p>
     <p>Through working with various teams, I discovered that nothing makes me happier than working with a team who believes in their product; and the value it creates for people.</P>
     <p><a href="playground.html">When I'm not at work</a>, you can find me doodling away on my iPad, 3D modeling objects to make or building tools and templates to free up my time.</p>
     <p>If you need to get in touch or learn more about what I do, drop me an email at <a href="mailto:hello@joleneng.com?Subject=Hello%20there" target="_top">hello@joleneng.com</a>.</p>
