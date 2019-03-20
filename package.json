@@ -1,0 +1,29 @@
+{
+  "name": "jolenenjy",
+  "version": "1.0.0",
+  "description": "portfolio site",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^3.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-nunjucks-render": "^2.2.3",
+    "sassdoc": "^2.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jolenenjy/jolenenjy.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jolenenjy/jolenenjy.github.io/issues"
+  },
+  "homepage": "https://github.com/jolenenjy/jolenenjy.github.io#readme"
+}
